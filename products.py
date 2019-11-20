@@ -37,7 +37,7 @@ def write_products(filename, products):
 		for p in products:
 			f.write(p[0] + ',' + p[1] + '\n')
 
-
+#主要程式執行碼
 def main():
 	filename = 'products.csv'
 	if os.path.isfile(filename):  #檢查檔案在不在
@@ -49,4 +49,5 @@ def main():
 	print_products(products)
 	write_products(filename, products)
 
+#進入點
 main()
